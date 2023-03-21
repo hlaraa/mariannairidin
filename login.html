@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Marianna Idirin</title>
+
+	<!-- Normalize V8.0.1 -->
+	<link rel="stylesheet" href="./css/normalize.css">
+
+	<!-- MDBootstrap V5 -->
+	<link rel="stylesheet" href="./css/mdb.min.css">
+
+	<!-- Font Awesome V5.15.1 -->
+	<link rel="stylesheet" href="./css/all.css">
+
+	<!-- Sweet Alert V10.13.0 -->
+	<script src="./js/sweetalert2.js" ></script>
+
+	<!-- General Styles -->
+	<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body id="main-body">
+
+	<!-- Header -->
+	<header class="header full-box bg-white">
+	    <div class="header-brand full-box">
+	        <a href="login.html">
+	            <img src="./assets/img/mi_logo.jpg" alt="Designlopers" class="img-fluid">
+	        </a>
+	    </div>
+
+	    <div class="header-options full-box">
+			<div style="display: inline; text-align: center; text-align: center; font-weight: bolder; font-size: 30px;">
+				Marianna Idirin
+			</div>
+		</div>
+	</header>
+
+
+	<!-- Content -->
+	<section class="container-signin">
+	    <div class="login-content div-bordered mb-4">
+	        <figure class="full-box mb-4">
+	            <img src="./assets/img/mi_logo.jpg" alt="" class="img-fluid login-icon">
+	        </figure>
+	        <form action="modules.html" method="POST" autocomplete="off">
+	            <div class="form-outline mb-4">
+	                <input type="email" class="form-control" id="login_email" name="login_email" maxlength="50" required="" >
+	                <label for="login_email" class="form-label"><i class="fas fa-envelope-open-text"></i> &nbsp; Usuario</label>
+	            </div>
+	            <div class="form-outline mb-4">
+	                <input type="password" class="form-control" id="login_clave" name="login_clave" pattern="[a-zA-Z0-9$@.-]{7,100}" maxlength="100" required="" >
+	                <label for="login_clave" class="form-label"><i class="fas fa-key"></i> &nbsp; Contraseña</label>
+	            </div>
+	            <button type="submit" class="btn btn-primary text-center mb-4 w-100">INGRESAR</button>
+	        </form>
+	    </div>
+	    <p class="text-center poppins-regular">¿No tienes cuenta? <a class="font-weight-bold">Regístrate aquí</a></p>
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" ><i class="far fa-copyright"></i> Marianna Idirin 2023</h5></li>
+	                    <li> Todos los derechos reservados </li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >México</h5></li>
+	                    <li><i class="fas fa-map-marker-alt fa-fw"></i> Carretera Transpeninsular Km. 24.5 Plaza Koral, Local 2, Nivel 2 Rancho Cerro Colorado, San José del Cabo, B.C.S.</li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >Siguenos en:</h5> </li>
+	                    <li>
+	                        <a href="https://es-la.facebook.com/CarlosAlfaroES/" class="footer-link" target="_blank" >
+	                            <i class="fab fa-facebook fa-fw"></i> Facebook
+	                        </a>
+	                    </li>
+
+	                    <li>
+	                        <a href="https://www.youtube.com/c/CarlosAlfaro007" class="footer-link" target="_blank" >
+	                            <i class="fab fa-youtube fa-fw"></i>
+	                                Youtube
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+	</footer>
+
+
+	<!-- MDBootstrap V5 -->
+	<script src="./js/mdb.min.js" ></script>
+
+	<!-- General scripts -->
+	<script src="./js/main.js" ></script>
+</body>
+</html>

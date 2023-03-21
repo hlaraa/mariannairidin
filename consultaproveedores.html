@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Marianna Idirin</title>
+
+	<!-- Normalize V8.0.1 -->
+	<link rel="stylesheet" href="./css/normalize.css">
+
+	<!-- MDBootstrap V5 -->
+	<link rel="stylesheet" href="./css/mdb.min.css">
+
+	<!-- Font Awesome V5.15.1 -->
+	<link rel="stylesheet" href="./css/all.css">
+
+	<!-- Sweet Alert V10.13.0 -->
+	<script src="./js/sweetalert2.js" ></script>
+
+	<!-- General Styles -->
+	<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body id="main-body">
+
+	<!-- Header -->
+	<header class="header full-box bg-white">
+	    <div class="header-brand full-box">
+	        <a href="modules.html" title="Marianna Idirin">
+	            <img src="./assets/img/mi_logo.jpg" alt="Designlopers" class="img-fluid">
+	        </a>
+	    </div>
+
+	    <div class="header-options full-box">
+			<div style="display: inline; text-align: center; text-align: center; font-weight: bolder; font-size: 30px;">
+				Marianna Idirin
+			</div>
+
+	        <!--nav class="header-navbar full-box poppins-regular font-weight-bold scroll" onclick="show_menu_mobile()" >
+	            <ul class="list-unstyled full-box" >
+	                <li>
+	                    <a href="index.html" >Inicio</a>
+	                </li>
+	                <li>
+	                    <a href="menu.html" >Menú</a>
+	                </li>
+	                <li>
+	                    <a href="registration.html" >Regístrate</a>
+	                </li>
+	                <li>
+	                    <a href="signin.html" >Login</a>
+	                </li>
+	            </ul>
+	        </nav-->
+	        <!--a href="bag.html" class="header-button full-box text-center" title="Carrito" >
+	            <i class="fas fa-shopping-bag"></i>
+	            <span class="badge bg-primary rounded-pill bag-count" >2</span>
+	        </a-->
+
+	        <div class="header-button full-box text-center" id="userMenu" data-mdb-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Nombre de usuario" >
+	            <i class="fas fa-user-circle"></i>
+	        </div>
+	        <div class="dropdown-menu div-bordered popup-login" aria-labelledby="userMenu">
+	            <p class="text-center" style="padding-top: 10px;">
+	                <i class="fas fa-user-circle fa-3x"></i><br>
+	                <small>Nombre de usuario</small>
+	            </p>
+	            <a class="dropdown-item" href="javascript:void(0);">
+	                <i class="fab fa-dashcube fa-fw"></i> &nbsp; Dashboard
+	            </a>
+	            <a class="dropdown-item" href="javascript:void(0);">
+	                <i class="fas fa-sign-out-alt"></i> &nbsp; Cerrar sesión
+	            </a>
+	        </div>
+
+	        <a href="javascript:void(0);" class="header-button full-box text-center d-lg-none" title="Menú" onclick="show_menu_mobile()" >
+	            <i class="fas fa-bars"></i>
+	        </a>
+	    </div>
+	</header>
+
+
+	<!-- Content -->
+	<section class="container-cart ">
+	    <div class="container container-web-page">
+	        <h3 class="font-weight-bold poppins-regular text-uppercase">Proveedores</h3>
+	        <hr>
+
+
+			<div class="container-fluid" style="border-top: 1px solid #E1E1E1; padding: 20px; 0">
+				<div class="row align-items-center">
+					<div class="col-12 col-sm-4 text-center text-sm-start">
+						
+					</div>
+					<div class="col-12 col-sm-4 text-center">
+						<button type="button" class="btn btn-link" data-mdb-toggle="modal" data-mdb-target="#saucerModal">
+							<i class="fas fa-search fa-fw"></i> &nbsp; Buscar
+						</button>
+					</div>
+					<div class="col-12 col-sm-4 text-center text-sm-end">
+						<div class="dropdown">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+	    </div>
+	    
+	    <div class="container" style="padding-top: 40px;">
+
+	        <div class="row">
+	            <div class="col-12 col-md-7 col-lg-8" style="width: 100%;">
+	                <div class="container-fluid">
+
+	                    <h5 class="poppins-regular font-weight-bold full-box text-center">
+							ID PROVEEDOR: 1325 &nbsp;&nbsp;&nbsp; ALQUILADORA VÁZQUEZ
+						</h5>
+	                    <div class="bag-item full-box">
+	                        <figure class="full-box">
+	                            <img src="./assets/img/alquiladora.jpeg" class="img-fluid" alt="platillo_nombre">
+	                        </figure>
+	                        <div class="full-box">
+	                            <div class="container-fluid">
+	                                <div class="row">
+	                                    <div class="col-12 col-lg-6 text-center mb-4" style="margin-bottom: 0.5rem!important;">
+	                                        <div class="row justify-content-center">
+	                                            <div class="col-auto">
+	                                                <div class="form-outline mb-4">
+														<span class="poppins-regular font-weight-bold" style="color:blueviolet;" >
+															SERVICIOS: RENTA DE MUEBLES
+														</span>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+
+										<div class="col-12 col-lg-6 text-center mb-4" style="margin-bottom: 0.5rem!important;">
+	                                        <div class="row justify-content-center">
+	                                            <div class="col-auto">
+	                                                <div class="form-outline mb-4">
+	                                                    <span class="poppins-regular font-weight-bold" style="color:forestgreen;" >
+															FIABILIDAD: 100%
+														</span>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+
+										<div class="col-12 col-lg-6 text-center mb-4" style="margin-bottom: 0.5rem!important;">
+	                                        <div class="row justify-content-center">
+	                                            <div class="col-auto">
+	                                                <div class="form-outline mb-4">
+	                                                    <span class="poppins-regular font-weight-bold" style="color: brown;" >
+															CRÉDITO: SI
+														</span>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+
+										<div class="col-12 col-lg-6 text-center mb-4" style="margin-bottom: 0.5rem!important;">
+	                                        <div class="row justify-content-center">
+	                                            <div class="col-auto">
+	                                                <div class="form-outline mb-4">
+														<span class="poppins-regular font-weight-bold" style="color: goldenrod;" >
+															ESTATUS: VIGENTE
+														</span>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                    <div class="col-12 col-lg-2 text-center text-lg-end mb-4" style="width: 100%; margin-bottom: 0px !important;">
+											<button type="button" class="btn btn-success" data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Actualizar evento" ><i class="fas fa-sync-alt fa-fw"></i></button>
+	                                        <button type="button" class="btn btn-danger" data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Cancelar evento" >
+	                                            <span aria-hidden="true"><i class="far fa-trash-alt"></i></span>
+	                                        </button>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+
+
+	                    <hr>
+
+
+	                    <h5 class="poppins-regular font-weight-bold full-box text-center">
+							ID PROVEEDOR: 5806 &nbsp;&nbsp;&nbsp; MARIACHI VARGAS
+						</h5>
+	                    <div class="bag-item full-box">
+	                        <figure class="full-box">
+	                            <img src="./assets/img/mariachivargas.jpg" class="img-fluid" alt="platillo_nombre">
+	                        </figure>
+	                        <div class="full-box">
+	                            <div class="container-fluid">
+	                                <div class="row">
+	                                    <div class="col-12 col-lg-6 text-center mb-4" style="margin-bottom: 0.5rem!important;">
+	                                        <div class="row justify-content-center">
+	                                            <div class="col-auto">
+	                                                <div class="form-outline mb-4">
+														<span class="poppins-regular font-weight-bold" style="color:blueviolet;" >
+															SERVICIOS: MARIACHI
+														</span>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+
+										<div class="col-12 col-lg-6 text-center mb-4" style="margin-bottom: 0.5rem!important;">
+	                                        <div class="row justify-content-center">
+	                                            <div class="col-auto">
+	                                                <div class="form-outline mb-4">
+	                                                    <span class="poppins-regular font-weight-bold" style="color:forestgreen;" >
+															FIABILIDAD: 95%
+														</span>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+
+										<div class="col-12 col-lg-6 text-center mb-4" style="margin-bottom: 0.5rem!important;">
+	                                        <div class="row justify-content-center">
+	                                            <div class="col-auto">
+	                                                <div class="form-outline mb-4">
+	                                                    <span class="poppins-regular font-weight-bold" style="color: brown;" >
+															CRÉDITO: NO
+														</span>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+
+										<div class="col-12 col-lg-6 text-center mb-4" style="margin-bottom: 0.5rem!important;">
+	                                        <div class="row justify-content-center">
+	                                            <div class="col-auto">
+	                                                <div class="form-outline mb-4">
+														<span class="poppins-regular font-weight-bold" style="color: goldenrod;" >
+															ESTATUS: VIGENTE
+														</span>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                    <div class="col-12 col-lg-2 text-center text-lg-end mb-4" style="width: 100%; margin-bottom: 0px !important;">
+											<button type="button" class="btn btn-success" data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Actualizar evento" ><i class="fas fa-sync-alt fa-fw"></i></button>
+	                                        <button type="button" class="btn btn-danger" data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Cancelar evento" >
+	                                            <span aria-hidden="true"><i class="far fa-trash-alt"></i></span>
+	                                        </button>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+
+	                </div> 
+	            </div>
+	        </div>
+
+
+			<nav aria-label="Page navigation example">
+				<ul class="pagination justify-content-center">
+					<li class="page-item">
+						<a class="page-link" href="#">Anterior</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">1</a>
+					</li>
+					<li class="page-item active">
+						<a class="page-link" href="#">2</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">3</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">Siguiente</a>
+					</li>
+				</ul>
+			</nav>
+	    </div>
+
+	    <!-- Carrito vacio --
+	    <div class="container">
+	        <p class="text-center" ><i class="fas fa-shopping-bag fa-5x"></i></p>
+	        <h4 class="text-center poppins-regular font-weight-bold" >Carrito de compras vacío</h4>
+	    </div> -->
+	</section>
+
+	<!-- Modal -->
+	<div class="modal fade" id="saucerModal" tabindex="-1" aria-hidden="true" aria-labelledby="saucerModalLabel" aria-hidden="true">
+	    <div class="modal-dialog" role="document">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <h5 class="modal-title" id="saucerModalLabel">Buscar Proveedor</h5>
+	                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+	            </div>
+	            <div class="modal-body">
+	                <div class="form-outline mb-4" style="border: 0px; border-bottom: 1px; border-style: solid !important; border-color: #8080804a !important;">
+	                    <input type="text" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{4,25}" class="form-control" name="buscar_platillo" id="buscar_platillo" maxlength="25">
+	                    <label for="buscar_platillo" class="form-label">Buscar por ID Proveedor o Nombre</label>
+	                </div>
+	            </div>
+	            <div class="modal-footer">
+	                <button type="button" class="btn btn-danger" data-mdb-dismiss="modal"><i class="fas fa-times fa-fw"></i> &nbsp; Cerrar</button>
+	                <button type="button" class="btn btn-info"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+
+	<!-- Footer -->
+	<footer class="footer">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" ><i class="far fa-copyright"></i> Marianna Idirin 2023</h5></li>
+	                    <li> Todos los derechos reservados </li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >México</h5></li>
+	                    <li><i class="fas fa-map-marker-alt fa-fw"></i> Carretera Transpeninsular Km. 24.5 Plaza Koral, Local 2, Nivel 2 Rancho Cerro Colorado, San José del Cabo, B.C.S.</li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >Siguenos en:</h5> </li>
+	                    <li>
+	                        <a href="https://es-la.facebook.com/CarlosAlfaroES/" class="footer-link" target="_blank" >
+	                            <i class="fab fa-facebook fa-fw"></i> Facebook
+	                        </a>
+	                    </li>
+
+	                    <li>
+	                        <a href="https://www.youtube.com/c/CarlosAlfaro007" class="footer-link" target="_blank" >
+	                            <i class="fab fa-youtube fa-fw"></i>
+	                                Youtube
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+	</footer>
+	
+	
+	<!-- MDBootstrap V5 -->
+	<script src="./js/mdb.min.js" ></script>
+
+	<!-- General scripts -->
+	<script src="./js/main.js" ></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Marianna Idirin</title>
+
+	<!-- Normalize V8.0.1 -->
+	<link rel="stylesheet" href="./css/normalize.css">
+
+	<!-- MDBootstrap V5 -->
+	<link rel="stylesheet" href="./css/mdb.min.css">
+
+	<!-- Font Awesome V5.15.1 -->
+	<link rel="stylesheet" href="./css/all.css">
+
+	<!-- Sweet Alert V10.13.0 -->
+	<script src="./js/sweetalert2.js" ></script>
+
+	<!-- General Styles -->
+	<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body id="main-body">
+
+	<!-- Header -->
+	<header class="header full-box bg-white">
+	    <div class="header-brand full-box">
+	        <a href="modules.html" title="Marianna Idirin">
+	            <img src="./assets/img/mi_logo.jpg" alt="Designlopers" class="img-fluid">
+	        </a>
+	    </div>
+
+	    <div class="header-options full-box">
+			<div style="display: inline; text-align: center; text-align: center; font-weight: bolder; font-size: 30px;">
+				Marianna Idirin
+			</div>
+
+	        <nav class="header-navbar full-box poppins-regular font-weight-bold scroll" onclick="show_menu_mobile()" >
+	            <!--ul class="list-unstyled full-box" >
+	                <li>
+	                    <a href="index.html" >Inicio</a>
+	                </li>
+	                <li>
+	                    <a href="modules.html" >Inicio</a>
+	                </li>
+	                <li>
+	                    <a href="registration.html" >Regístrate</a>
+	                </li>
+	                <li>
+	                    <a href="signin.html" >Login</a>
+	                </li>
+	            </ul>
+	        </nav-->
+	        <!--a href="bag.html" class="header-button full-box text-center" title="Carrito" >
+	            <i class="fas fa-shopping-bag"></i>
+	            <span class="badge bg-primary rounded-pill bag-count" >2</span>
+	        </a-->
+
+	        <div class="header-button full-box text-center" id="userMenu" data-mdb-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Nombre de usuario" >
+	            <i class="fas fa-user-circle"></i>
+	        </div>
+	        <div class="dropdown-menu div-bordered popup-login" aria-labelledby="userMenu">
+	            <p class="text-center" style="padding-top: 10px;">
+	                <i class="fas fa-user-circle fa-3x"></i><br>
+	                <small>Usuario</small>
+	            </p>
+	            <a class="dropdown-item" href="javascript:void(0);">
+	                <i class="fab fa-dashcube fa-fw"></i> &nbsp; Dashboard
+	            </a>
+	            <a class="dropdown-item" href="javascript:void(0);">
+	                <i class="fas fa-sign-out-alt"></i> &nbsp; Cerrar sesión
+	            </a>
+	        </div>
+
+	        <a href="javascript:void(0);" class="header-button full-box text-center d-lg-none" title="Menú" onclick="show_menu_mobile()" >
+	            <i class="fas fa-bars"></i>
+	        </a>
+	    </div>
+	</header>
+
+
+	<!-- Content -->
+	<div class="container container-web-page">
+	    <h3 class="font-weight-bold poppins-regular text-uppercase">Clientes</h3>
+
+	    <div class="container-cards full-box" style="padding-bottom: 40px;">
+
+		  <a href="consultaclientes.html" >
+			<div class="card-product div-bordered bg-white shadow-2 cursor-pointer">
+				<figure class="card-product-img">
+					<img class="img-fluid" src="./assets/img/icons/buscarcliente.png" alt="nombre_platillo">
+				</figure>
+				<div class="card-product-body-mi">
+					<div class="card-product-content-modules">
+						<p class="card-product-price text-center fw-bolder">Consultar</p>
+					</div>
+				</div>
+			</div>
+		  </a>
+
+		  <a href="nuevocliente.html" >
+			<div class="card-product div-bordered bg-white shadow-2 cursor-pointer">
+				<figure class="card-product-img">
+					<img class="img-fluid" src="./assets/img/icons/nuevocliente.png" alt="nombre_platillo">
+				</figure>
+				<div class="card-product-body-mi">
+					<div class="card-product-content-modules">
+						<p class="card-product-price text-center fw-bolder">Registrar</p>
+					</div>
+				</div>
+			</div>
+		  </a>
+	</div>
+
+	<!-- Footer -->
+	<footer class="footer">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" ><i class="far fa-copyright"></i> Marianna Idirin 2023</h5></li>
+	                    <li> Todos los derechos reservados </li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >México</h5></li>
+	                    <li><i class="fas fa-map-marker-alt fa-fw"></i> Carretera Transpeninsular Km. 24.5 Plaza Koral, Local 2, Nivel 2 Rancho Cerro Colorado, San José del Cabo, B.C.S.</li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >Siguenos en:</h5> </li>
+	                    <li>
+	                        <a href="https://es-la.facebook.com/CarlosAlfaroES/" class="footer-link" target="_blank" >
+	                            <i class="fab fa-facebook fa-fw"></i> Facebook
+	                        </a>
+	                    </li>
+
+	                    <li>
+	                        <a href="https://www.youtube.com/c/CarlosAlfaro007" class="footer-link" target="_blank" >
+	                            <i class="fab fa-youtube fa-fw"></i>
+	                                Youtube
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+	</footer>
+
+	
+	<!-- MDBootstrap V5 -->
+	<script src="./js/mdb.min.js" ></script>
+
+	<!-- General scripts -->
+	<script src="./js/main.js" ></script>
+</body>
+</html>
